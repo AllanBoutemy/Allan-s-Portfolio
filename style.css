@@ -1,4 +1,5 @@
 
+
 *
 {
     margin: 0;
@@ -35,14 +36,19 @@ body{
 
 
 h1{
+    font-family: 'Press Start 2P', cursive;
     text-decoration: underline;
     text-underline-offset: 4px;
     padding: 5px;
-    border:1px solid transparent;
+    border: 1px solid transparent;
     border-bottom: none;
+    font-size: initial;
     transition: 0.3s ease-out;
-
 }
+
+
+
+
 a:hover{
     cursor: pointer;
 
@@ -88,7 +94,6 @@ text-decoration-color: goldenrod;
     gap: 2%;
     position: fixed;
     right: 27px;
-    overflow: hidden;
     /* top: 0; */
     /* width: 100%; */
     max-width: 93%;
@@ -231,7 +236,7 @@ iframe{
     place-content: center;
 }
 .about_body p {
-    width: 50vmax;
+    width: 48vmax;
     max-width: 100%;
 }
 
@@ -268,7 +273,20 @@ margin-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
-
+@media all and (max-width:583px) {
+    .hero_nav a h1 {
+        transform: translateY(25px);
+    }
+    .hero_nav a {
+        margin-inline: auto;
+    }
+    .main_header nav{
+        right: unset;
+        top:14px;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    }
+}
 @media all and (max-width:880px) {
     h2{
         font-size: xx-large;

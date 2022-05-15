@@ -116,6 +116,8 @@ h1:hover {
   flex-direction: column;
   justify-content: center;
   animation: opacityShow 1s linear both;
+  position: relative;
+  z-index: 20;
 }
 
 .main_header::after {
@@ -146,7 +148,7 @@ h1:hover {
   z-index: 1;
   border-radius: 20px;
   padding-top: 5px;
-  padding-right: 3px;
+  padding-inline: 16px;
 }
 
 .main_header nav a {
@@ -214,7 +216,6 @@ section.portfolio_body {
   gap: 20px;
 }
 .portfolio_card {
-  z-index: -1;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

@@ -195,8 +195,8 @@ h1:hover {
 
 .hero p {
   font-family: "Press Start 2P";
-  font-size: clamp(0.85rem,15px,16px);
-  text-shadow: 4px 0px 21px #b8860b85;
+  font-size: clamp(0.85rem,1rem,22px);
+  text-shadow: 4px 0px 21px #b8860b;
 }
 
 

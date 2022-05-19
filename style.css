@@ -193,7 +193,7 @@ h1:hover {
   position: relative;
   /* left: -15px; */
   box-sizing: border-box;
-  box-shadow: inset -20px -9px 0px 10px #7a5b0c;
+  box-shadow: 20px 9px 15px 9px #8d690df7;
 }
 
 .hero p {

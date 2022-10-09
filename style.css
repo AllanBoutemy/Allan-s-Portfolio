@@ -231,12 +231,11 @@ section.portfolio_body {
   position: relative;
   height: fit-content;
 }
-iframe {
+iframe, .card_img {
   width: 560px;
   max-width: 100%;
 }
 .card_img {
-  width: 400px;
 
   object-fit: contain;
   object-position: center;

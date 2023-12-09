@@ -19,20 +19,16 @@
     <script>
         // Fonction pour détecter la langue du navigateur
         function detectLanguage() {
-            // Vous pouvez utiliser d'autres méthodes pour détecter la langue du navigateur
-            // Ici, nous utilisons simplement la langue du navigateur par défaut
             const userLang = navigator.language || navigator.userLanguage;
             return userLang.startsWith('en') ? 'en' : 'fr';
         }
 
-        // Fonction pour charger le contenu en fonction de la langue
+
         function loadContent() {
             const lang = detectLanguage();
            // const lang = "en";
             const fileName = lang === 'en' ? 'index_en.html' : 'index_fr.html';
 
-
-                    // Charger la bibliothèque AOS en utilisant une promesse
         const loadAOS = new Promise((resolve, reject) => {
             const script = document.createElement('script');
             script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
@@ -43,15 +39,13 @@
         });
 
         loadAOS.finally(() => {
-            // Charger le contenu du fichier approprié
             fetch(fileName)
                 .then(response => response.text())
                 .then(html => {
-                    // Remplacer le contenu de la page par le contenu du fichier
                    // document.body.innerHTML = html;
                     document.open();
-                document.write(html);
-                document.close();
+                    document.write(html);
+                    document.close();
                 })
                 .catch(error => console.error('Erreur lors du chargement du contenu :', error));
 
@@ -60,8 +54,6 @@
     
         // Charger le contenu au chargement de la page
         window.onload = loadContent;
-        console.log("WOW");
-
     </script>
 </head>
 
